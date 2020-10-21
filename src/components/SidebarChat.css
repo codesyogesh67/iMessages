@@ -1,0 +1,36 @@
+.sidebarChat {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.sidebarChat__info {
+  margin-left: 15px;
+  position: relative;
+  width: 100%;
+}
+.sidebarChat__info > small {
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.sidebarChat:hover {
+  background-color: #3e93fd;
+  color: white;
+}
+
+.sidebar__chats {
+  overflow: scroll;
+}
+
+/* Hide scrollbar for chrome, safari and opera */
+.sidebar__chats::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar__chats {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* firefox */
+}
